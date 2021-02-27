@@ -5,7 +5,7 @@ Random::
 	push de
 	push bc
 	farcall Random_
-	ldh a, [hRandomAdd]
+	ldh a, [hRandomSub]
 	pop bc
 	pop de
 	pop hl
