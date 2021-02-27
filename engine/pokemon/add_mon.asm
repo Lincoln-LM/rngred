@@ -113,7 +113,7 @@ _AddPartyMon::
 ; Not wild.
 	call Random ; generate random IVs
 	ld b, a
-	call Random
+	ldh a, [hRandomAdd]
 
 .next4
 	push bc
